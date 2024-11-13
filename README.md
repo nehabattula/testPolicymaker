@@ -1,6 +1,3 @@
-# Azure Function Integration with VS Code and Flask UI
-
-This project demonstrates setting up and deploying an Azure Function using VS Code, integrating Azure OpenAI services, blob storage, and a Flask UI for interaction and testing.
 
 ---
 
