@@ -83,3 +83,27 @@ This project demonstrates setting up and deploying an Azure Function using VS Co
    cd <your-function-project-directory>
    func init --python
    func new
+
+### 4.Install Required Dependencies for the Azure Function
+cd <your-function-project-directory>
+
+python -m venv .env
+source .env/bin/activate  # On Windows: .env\Scripts\activate
+
+pip install azure-functions azure-storage-blob openai
+
+
+Code Your Azure Function to Integrate Azure OpenAI and Blob Storage
+Create a file named __init__.py in function directory
+
+
+### 5. To run the provided UI code with the Flask backend and Azure Function integration
+pip install flask
+
+set up env export AZURE_FUNCTION_URL="https://<YOUR_AZURE_FUNCTION_URL>"
+
+Run flask app python app.py
+
+to interact with UI : http://127.0.0.1:5000/
+
+If you are testing locally, you can find your local function URL (e.g., http://localhost:7071/api/YourFunctionName) and replace AZURE_FUNCTION_URL in the Flask
